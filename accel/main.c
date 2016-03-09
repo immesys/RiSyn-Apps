@@ -41,11 +41,9 @@ static msg_t _main_msg_queue[MAIN_QUEUE_SIZE];
 static msg_t _comms_msg_queue[COMMS_QUEUE_SIZE];
 
 extern void handle_input_line(const shell_command_t *command_list, char *line);
-extern int udp_cmd(int argc, char **argv);
-extern void udp_send(char *addr_str, char *port_str, char *data, size_t dlen);
+
 #define INTERVAL 10000
 static const shell_command_t shell_commands[] = {
-    { "udp", "send data over UDP and listen on UDP ports", udp_cmd },
     { NULL, NULL, NULL }
 };
 
@@ -269,7 +267,8 @@ void *comms(void *arg)
       }
       case MSG_TYPE_DNS:
       {
-        create_dns_record();
+        //create_dns_record();
+        bcast();
         xtimer_set_msg(&dns_timer,DNS_INTERVAL, &dns_msg, thread_getpid());
         break;
       }
