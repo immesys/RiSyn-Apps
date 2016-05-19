@@ -1,0 +1,125 @@
+JLinkRTTClient 
+###RTT Client: ************************************************************ 
+###RTT Client: *           SEGGER MICROCONTROLLER GmbH & Co KG            * 
+###RTT Client: *   Solutions for real time microcontroller applications   * 
+###RTT Client: ************************************************************ 
+###RTT Client: *                                                          * 
+###RTT Client: *  (c) 2012 - 2014  SEGGER Microcontroller GmbH & Co KG    * 
+###RTT Client: *                                                          * 
+###RTT Client: *     www.segger.com     Support: support@segger.com       * 
+###RTT Client: *                                                          * 
+###RTT Client: ************************************************************ 
+###RTT Client: *                                                          * 
+###RTT Client: * SEGGER J-Link RTT Client   Compiled Aug  7 2015 15:47:34 * 
+###RTT Client: *                                                          * 
+###RTT Client: ************************************************************ 
+
+###RTT Client: -----------------------------------------------
+###RTT Client: Connecting to J-Link RTT Server via localhost:19021  Connected.
+SEGGER J-Link V5.00l - Real time terminal output
+SEGGER J-Link EDU V9.3, SN=269300772
+Process: JLinkGDBServer
+Sending DNS alias
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to PROBE (probe with 3 unicast NS every 1000000 us)
+ndp internal: send neighbor solicitation (iface: 7, src: ðh,  tgt: fe80::5844:3d5c:600e:5e32, dst: fe80::5844:3d5c:600e:5e32)
+ndp: building source link-layer address option (l2addr: 00:12:6d:03:00:00:be:ef)
+ndp: building neighbor solicitation message
+ndp: received neighbor advertisement (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::5844:3d5c:600e:5e32)
+ndp internOCC TRIG
+
+OCC TRIG
+
+
+> ndp internal: set fe80::5844:3d5c:600e:5e32 state to STALE (go into DELAY on next packet)
+ndp: received neighbor solicitation (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::212:6d03:0:beef)
+ndp: received SL2A (link-layer address: 5a:44:3d:5c:60:0e:5e:32)
+ndp internal: send neighbor advertisement (iface: 7, tgt: fe80::212:6d03:0:beef, dst: fe80::5844:3d5c:600e:5e32, supply_tl2a: 0)
+ndp: building neighbor advertisement message
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to DELAY (probe with unicast NS in 5 seconds)
+OCC TRIG
+
+ACCTRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to PROBE (probe with 3 unicast NS every 1000000 us)
+ndp internal: send neighbor solicitation (iface: 7, src: ðh,  tgt: fe80::5844:3d5c:600e:5e32, dst: fe80::5844:3d5c:600e:5e32)
+ndp: building source link-layer address option (l2addr: 00:12:6d:03:00:00:be:ef)
+ndp: building neighbor solicitation message
+ndp: received neighbor advertisement (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::5844:3d5c:600e:5e32)
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to REACHABLE (reachable time = 18000000 us)
+OCC TRIG
+
+Sending DNS alias
+OCC TRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to STALE (go into DELAY on next packet)
+ndp: received neighbor solicitation (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::212:6d03:0:beef)
+ndp: received SL2A (link-layer address: 5a:44:3d:5c:60:0e:5e:32)
+ndp internal: send neighbor advertisement (iface: 7, tgt: fe80::212:6d03:0:beef, dst: fe80::5844:3d5c:600e:5e32, supply_tl2a: 0)
+ndp: building neighbor advertisement message
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to DELAY (probe with unicast NS in 5 seconds)
+OCC TRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to PROBE (probe with 3 unicast NS every 1000000 us)
+ndp internal: send neighbor solicitation (iface: 7, src: ðh,  tgt: fe80::5844:3d5c:600e:5e32, dst: fe80::5844:3d5c:600e:5e32)
+ndp: building source link-layer address option (l2addr: 00:12:6d:03:00:00:be:ef)
+ndp: building neighbor solicitation message
+ndp: received neighbor advertisement (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::5844:3d5c:600e:5e32)
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to REACHABLE (reachable time = 18000000 us)
+OCC TRIG
+
+OCC TRIG
+
+OCC TRIG
+
+OCC TRIG
+
+Sending DNS alias
+OCC TRIG
+
+OCC TRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to STALE (go into DELAY on next packet)
+ndp: received neighbor solicitation (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::212:6d03:0:beef)
+ndp: received SL2A (link-layer address: 5a:44:3d:5c:60:0e:5e:32)
+ndp internal: send neighbor advertisement (iface: 7, tgt: fe80::212:6d03:0:beef, dst: fe80::5844:3d5c:600e:5e32, supply_tl2a: 0)
+ndp: building neighbor advertisement message
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to DELAY (probe with unicast NS in 5 seconds)
+OCC TRIG
+
+OCC TRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to PROBE (probe with 3 unicast NS every 1000000 us)
+ndp internal: send neighbor solicitation (iface: 7, src: ðh,  tgt: fe80::5844:3d5c:600e:5e32, dst: fe80::5844:3d5c:600e:5e32)
+ndp: building source link-layer address option (l2addr: 00:12:6d:03:00:00:be:ef)
+ndp: building neighbor solicitation message
+ndp: received neighbor advertisement (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::5844:3d5c:600e:5e32)
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to REACHABLE (reachable time = 18000000 us)
+OCC TRIG
+
+OCC TRIG
+
+OCC TRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to STALE (go into DELAY on next packet)
+Sending DNS alias
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to DELAY (probe with unicast NS in 5 seconds)
+ndp: received neighbor solicitation (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::212:6d03:0:beef)
+ndp: received SL2A (link-layer address: 5a:44:3d:5c:60:0e:5e:32)
+ndp internal: send neighbor advertisement (iface: 7, tgt: fe80::212:6d03:0:beef, dst: fe80::5844:3d5c:600e:5e32, supply_tl2a: 0)
+ndp: building neighbor advertisement message
+OCC TRIG
+
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to PROBE (probe with 3 unicast NS every 1000000 us)
+ndp internal: send neighbor solicitation (iface: 7, src: ðh,  tgt: fe80::5844:3d5c:600e:5e32, dst: fe80::5844:3d5c:600e:5e32)
+ndp: building source link-layer address option (l2addr: 00:12:6d:03:00:00:be:ef)
+ndp: building neighbor solicitation message
+ndp: received neighbor advertisement (src: fe80::5844:3d5c:600e:5e32, dst: fe80::212:6d03:0:beef, tgt: fe80::5844:3d5c:600e:5e32)
+ndp internal: set fe80::5844:3d5c:600e:5e32 state to REACHABLE (reachable time = 18000000 us)
+OCC TRIG
+
+OCC TRIG
+
+OCC TRIG
+
+###RTT Client: Connection closed by J-Link DLL. Going to reconnect.
+###RTT Client: Connecting to J-Link RTT Server via localhost:19021 ......

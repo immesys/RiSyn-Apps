@@ -3,7 +3,7 @@ APPLICATION = gnrc_networking
 
 # If no BOARD is found in the environment, use this default:
 BOARD ?= hamilton
-USEMODULE += xtimer
+
 # This has to be the absolute path to the RIOT base directory:
 RIOTBASE ?= /home/immesys/w/RiSyn/
 
