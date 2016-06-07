@@ -57,11 +57,14 @@ void insole(void)
         }
         else if (percent <= 0)
         {
-            percent = 1;
+            percent = 0;
         }
-        LED_ON;
-        gpio_set(gpout);
-        xtimer_usleep_until(&last_wakeup, percent * pwm_unit);
+        if (percent > 0)
+        {
+            LED_ON;
+            gpio_set(gpout);
+            xtimer_usleep_until(&last_wakeup, percent * pwm_unit);
+        }
         LED_OFF;
         gpio_clear(gpout);
         xtimer_usleep_until(&last_wakeup, (100 - percent) * pwm_unit);
