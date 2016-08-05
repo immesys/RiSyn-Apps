@@ -83,18 +83,18 @@ void server(void)
           {
             LED_ON;
             led_sleep = xtimer_now();
-            xtimer_usleep_until(&led_sleep, 250000);
+            xtimer_periodic_wakeup(&led_sleep, 250000);
             LED_OFF;
           }
           else if (temperature_value.number > 280000)
           {
             led_sleep = xtimer_now();
             LED_ON;
-            xtimer_usleep_until(&led_sleep, 200000);
+            xtimer_periodic_wakeup(&led_sleep, 200000);
             LED_OFF;
-            xtimer_usleep_until(&led_sleep, 100000);
+            xtimer_periodic_wakeup(&led_sleep, 100000);
             LED_ON;
-            xtimer_usleep_until(&led_sleep, 200000);
+            xtimer_periodic_wakeup(&led_sleep, 200000);
             LED_OFF;
           }
           break;
@@ -141,7 +141,7 @@ void client(void)
     temperature_value.number = 0;
 
     while(1) {
-        xtimer_usleep_until(&last_wakeup, INTERVAL);
+        xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
 
         char buf [10];
 
@@ -153,7 +153,7 @@ void client(void)
 
         // read temperature
         res = at30ts74_read(&tmp, &temperature_value.number);
-        if (res == 0) 
+        if (res == 0)
         {
             buf[2] = temperature_value.bytes[0];
             buf[3] = temperature_value.bytes[1];
@@ -181,7 +181,7 @@ void client(void)
 
         send("ff02::1", "4444", buf, 10);
         LED_ON;
-        xtimer_usleep_until(&last_wakeup, 500000);
+        xtimer_periodic_wakeup(&last_wakeup, 500000);
         LED_OFF;
         printf("sending msg! num %" PRId32 ", temperature %" PRId32 "\n", message_num.number, temperature_value.number);
         //printf("Sending packet %d\n", message_num);
@@ -193,11 +193,11 @@ int main(void)
     msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);
     char lbuf[100];
     strcpy(lbuf, "ifconfig 7 set chan 22\n");
-    handle_input_line(NULL, lbuf);
+    //handle_input_line(NULL, lbuf);
 
 
-    server();
-    //client();
+    //server();
+    client();
 
     return 0;
 }
