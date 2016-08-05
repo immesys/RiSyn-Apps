@@ -191,10 +191,6 @@ void client(void)
 int main(void)
 {
     msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);
-    char lbuf[100];
-    strcpy(lbuf, "ifconfig 7 set chan 22\n");
-    //handle_input_line(NULL, lbuf);
-
 
     //server();
     client();
