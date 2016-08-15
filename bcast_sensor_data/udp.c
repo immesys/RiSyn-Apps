@@ -47,7 +47,6 @@ void send(char *addr_str, char *port_str, char *data, uint16_t datalen)
         puts("Error: unable to parse destination port");
         return;
     }
-    printf("Port is %u\n", port);
 
     gnrc_pktsnip_t *payload, *udp, *ip;
     /* allocate payload */

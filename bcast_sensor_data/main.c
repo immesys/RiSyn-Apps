@@ -31,8 +31,8 @@ extern void handle_input_line(const shell_command_t *command_list, char *line);
 void server(void)
 {
   msg_t msg;
-  msg_t msg_queue[10];
-  msg_init_queue(msg_queue, 10);
+  msg_t msg_queue[16];
+  msg_init_queue(msg_queue, 16);
   uint32_t led_sleep;
 
   union value2 {int32_t number; uint8_t bytes[2];} message_num;
@@ -192,8 +192,8 @@ int main(void)
 {
     msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);
 
-    //server();
-    client();
+    server();
+    //client();
 
     return 0;
 }
